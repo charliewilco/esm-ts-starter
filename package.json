@@ -6,7 +6,8 @@
     "build": "node ./scripts/build",
     "postbuild": "tsc --declaration --emitDeclarationOnly",
     "example": "vite example --config example/vite.config.js",
-    "test": "jest"
+    "test": "jest",
+    "vercel-build": "vite build example --outDir ../public --config example/vite.config.js"
   },
   "devDependencies": {
     "esbuild": "^0.12.15",
