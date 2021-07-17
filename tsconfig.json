@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "commonjs",
-    "target": "es2016",
+    "target": "esnext",
     "lib": ["es2017", "dom"],
     "sourceMap": true,
     "allowJs": false,
@@ -11,10 +11,7 @@
     "moduleResolution": "node",
     "rootDir": "src",
     "strict": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@charliewilco/gluejar": ["./src/*"]
-    }
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

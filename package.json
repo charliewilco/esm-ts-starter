@@ -1,18 +1,23 @@
 {
   "name": "@charliewilco/esm-defaults",
   "license": "Unlicense",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "node ./scripts/build",
-    "postbuild": "tsc --declaration --emitDeclarationOnly",
-    "example": "vite example --config example/vite.config.js",
+    "build": "rollup -c",
     "test": "jest",
+    "example": "vite example --config example/vite.config.js",
     "vercel-build": "vite build example --outDir ../public --config example/vite.config.js"
   },
   "devDependencies": {
     "esbuild": "^0.12.15",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
+    "rollup": "^2.53.2",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.5.0",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5",
     "vite": "^2.4.2"
