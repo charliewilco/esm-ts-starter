@@ -1,6 +1,4 @@
-<center>
-  <h1>ES Module Defaults for TypeScript Libs</h1>
-</center>
+<h1 align="center">ES Module Defaults for TypeScript Libs</h1>
 
 Uses prettier, rollup, esbuild and vite for the example.
 
