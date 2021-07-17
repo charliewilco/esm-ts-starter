@@ -1,5 +1,5 @@
 {
-  "name": "@charliewilco/esm-defaults",
+  "name": "@charliewilco/esm",
   "license": "Unlicense",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
