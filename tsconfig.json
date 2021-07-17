@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es2016",
+    "lib": ["es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": false,
+    "declaration": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@charliewilco/gluejar": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
