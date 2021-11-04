@@ -2,9 +2,7 @@
   "name": "@charliewilco/esm",
   "version": "0.0.1",
   "license": "Unlicense",
-  "files": [
-    "dist/**/*"
-  ],
+  "files": ["dist/**/*"],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -12,9 +10,7 @@
     "prepare": "yarn build",
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
-    "test": "jest",
-    "example": "vite example --config example/vite.config.js",
-    "vercel-build": "vite build example --outDir ../public --config example/vite.config.js"
+    "test": "jest"
   },
   "devDependencies": {
     "esbuild": "^0.12.15",
@@ -24,8 +20,7 @@
     "rollup-plugin-dts": "^3.0.2",
     "rollup-plugin-esbuild": "^4.5.0",
     "ts-jest": "^27.0.3",
-    "typescript": "^4.3.5",
-    "vite": "^2.4.2"
+    "typescript": "^4.3.5"
   },
   "prettier": {
     "printWidth": 95,

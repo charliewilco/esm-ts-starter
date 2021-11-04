@@ -2,7 +2,7 @@
 
 [![Unit Tests](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/node.yml/badge.svg)](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/node.yml)
 
-Uses prettier, rollup, esbuild and vite for the example.
+Uses prettier, rollup & esbuild for the example.
 
 ## Install
 
