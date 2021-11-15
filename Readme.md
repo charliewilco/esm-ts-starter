@@ -1,8 +1,10 @@
-<h1 align="center">ES Module Defaults for TypeScript Libs</h1>
+<h1 align="center">ES Module Defaults for TS</h1>
 
 [![Unit Tests](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/node.yml/badge.svg)](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/node.yml)
 
-Uses prettier, rollup & esbuild for the example.
+[![Publish](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/publish.yml/badge.svg)](https://github.com/charliewilco/esm-ts-defaults/actions/workflows/publish.yml)
+
+Uses prettier, rollup & esbuild for the example. Nice defaults. Good stuff.
 
 ## Install
 
