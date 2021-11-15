@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "module": "commonjs",
+    "module": "esnext",
     "target": "esnext",
     "lib": ["es2017", "dom"],
     "sourceMap": true,
     "allowJs": false,
     "declaration": true,
-    "jsx": "react-jsx",
     "moduleResolution": "node",
     "rootDir": "src",
     "strict": true,
