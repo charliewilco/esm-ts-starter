@@ -13,7 +13,7 @@ Uses prettier, rollup & esbuild for the example. Nice defaults. Good stuff.
 ## Install
 
 ```sh
-yarn add @charliewilco/module
+pnpm add @charliewilco/module
 ```
 
 ## Usage

@@ -11,13 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: "14.x"
           registry-url: "https://registry.npmjs.org"
-      - run: yarn
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.32.0
+      - run: pnpm
       # Publish to npm
-      - run: yarn publish --access public
+      - run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Setup .npmrc file to publish to GitHub Packages
@@ -25,6 +28,6 @@ jobs:
         with:
           registry-url: "https://npm.pkg.github.com"
       # Publish to GitHub Packages
-      - run: yarn publish
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

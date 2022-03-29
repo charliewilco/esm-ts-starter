@@ -9,12 +9,13 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "prepare": "yarn build",
+    "prepare": "pnpm build",
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
     "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "esbuild": "^0.14.2",
     "jest": "^27.4.3",
     "prettier": "^2.5.1",
