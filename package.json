@@ -1,13 +1,15 @@
 {
 	"name": "@charliewilco/esm",
 	"version": "0.0.1",
+	"repository": "charliewilco/esm-ts-starter",
 	"license": "Unlicense",
 	"files": [
 		"dist/**/*"
 	],
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
+	"main": "dist/index.cjs",
+	"module": "dist/index.mjs",
 	"typings": "dist/index.d.ts",
+	"sideEffects": false,
 	"scripts": {
 		"prepare": "npm run build",
 		"prebuild": "rm -rf dist",
@@ -31,6 +33,6 @@
 		"bracketSameLine": true
 	},
 	"jest": {
-		"preset": "ts-jest"
+		"preset": "ts-jest/presets/default-esm"
 	}
 }

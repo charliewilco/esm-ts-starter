@@ -1,19 +1,19 @@
 {
-  "compilerOptions": {
-    "outDir": "dist",
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["es2017", "dom"],
-    "sourceMap": true,
-    "allowJs": false,
-    "declaration": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "rootDir": "src",
-    "strict": true,
-    "skipLibCheck": true,
-    "types": ["jest"]
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"outDir": "dist",
+		"module": "esnext",
+		"target": "esnext",
+		"lib": ["es2017", "dom"],
+		"sourceMap": true,
+		"allowJs": false,
+		"declaration": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"rootDir": "src",
+		"strict": true,
+		"skipLibCheck": true,
+		"types": ["jest"]
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
 }
