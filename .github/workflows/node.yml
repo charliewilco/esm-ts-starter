@@ -5,13 +5,15 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node: [16, 18, 20]
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 18.x
+      - name: Use Node.js ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
-          version: 18
+          node-version: ${{ matrix.node }}
       - name: Install Dependencies & Build
         run: |
           npm ci
